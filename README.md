@@ -136,3 +136,48 @@ On your smartphone or laptop: http://<NICLA-IP>:8080
 You will see:
 -Live camera feed
 -Gesture label drawn next to the detected sign
+
+## 📌 Results
+
+- 🎯 Stable real-time gesture recognition  
+- 🎯 Robust performance across different users & lighting conditions  
+- 🎯 Works instantly on any phone browser  
+- 🎯 Accurate bounding box + gesture label overlay  
+- 🎯 No app installation required  
+
+---
+
+## 📌 Demo
+
+📺 **Video:** _Add your YouTube link here_  
+📸 **Screenshots:** Available in `/demo/images/`  
+
+---
+
+## 📌 Edge Impulse Public Project
+
+🔗 **Link:** _Add your EI public project link here_  
+
+---
+
+## 📌 Hardware Used
+
+- Arduino Nicla Vision  
+- USB-C Cable  
+- Smartphone Hotspot  
+- Optional: TFT LCD Display (ST7789 / ILI9341)  
+
+---
+
+## 📌 License
+
+MIT License  
+
+---
+
+## 📌 Acknowledgements
+
+- Edge Impulse  
+- Arduino Nicla Vision  
+- OpenMV  
+- Dataset Volunteers  
