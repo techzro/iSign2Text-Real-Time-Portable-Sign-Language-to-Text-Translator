@@ -85,16 +85,10 @@ Silent-Voice/
 │   └── samples/                 
 │
 ├── edge-impulse/
-│   ├── impulse_screenshot.png
+|   ├── edge_impulse_link.txt
 │   ├── confusion_matrix.png
 │   ├── validation_metrics.png
-│   └── project_readme.md      
-│
-├── docs/
-│   ├── architecture_diagram.png
-│   ├── system_flowchart.png
-│   ├── hardware_setup.png
-│   └── methodology.pdf      
+│   └── project_readme.md         
 │
 └── demo/
     ├── demo_video_link.txt
