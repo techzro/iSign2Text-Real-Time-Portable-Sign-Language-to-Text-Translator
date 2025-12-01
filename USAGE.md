@@ -1,55 +1,69 @@
-# Run Silent-Voice: Sign Language Translator — Step-by-Step
+# Run iSign2Text: Real-Time Sign Language-to-Text Translator — Step-by-Step
 
-Two ways to run the project are provided below.  
-- **Method 1 — Quick (Edge Impulse, easiest)**: run inference from the Edge Impulse dashboard using the QR / browser link. Fast demo — **not very robust**.  
-- **Method 2 — Robust (recommended)**: clone the repo and run the OpenMV script on your **Arduino Nicla Vision**. This runs fully on the device, streams MJPEG over Wi-Fi, and shows live labels on the video.
+This guide explains how to run the iSign2Text system on your Arduino Nicla Vision.  
 
-Use Method 1 for a quick demo. Use Method 2 for stable, repeatable use and competition demo.
+There are **two ways** to use the project:
+
+- **Method 1 — Quick (Edge Impulse, easiest):**  
+  Run inference instantly from your browser via Edge Impulse QR link.  
+  Fast, but **not very robust**.
+
+- **Method 2 — Robust (recommended):**  
+  Clone the repo and run the OpenMV script on the **Nicla Vision**.  
+  This performs **on-device inference**, streams MJPEG over Wi-Fi, and overlays gesture labels.
+
+Use Method 1 for quick testing. Use Method 2 for stable, real-time demo and competition use.
 
 ---
 
-## Method 1 — Quick: Run from Edge Impulse (Easiest)
-1. Open this Edge Impulse project in your browser:  
+## ⭐ Method 1 — Quick: Run from Edge Impulse (Easiest)
+
+1. Open the public Edge Impulse project:  
    `https://studio.edgeimpulse.com/public/841431/live`
 
-2. On the **Project Dashboard** (right side) find the **Run this model** panel.  
-   - There will be a **QR code** and a button **Launch in browser**.
+2. On the right side, locate **Run this model**.  
+   You will see:  
+   - A **QR code**  
+   - A **Launch in browser** button  
 
-3. From your phone or laptop:
-   - **Option A (phone):** Scan the QR code with your phone camera. Open the resulting link.
-   - **Option B (laptop):** Click **Launch in browser**.
+3. You may use either:
+   - **Phone:** Scan the QR code  
+   - **Laptop:** Click “Launch in browser”
 
-4. The browser will load the live inference demo page.  
-   - Point your camera (or upload an image) and watch the model run inference and show predicted labels.  
-   - This requires an internet connection and uses the Edge Impulse hosted demo. Good for quick verification.
+4. A browser-based demo opens.  
+   - Point your webcam  
+   - View predictions live  
+   - Works for quick validation
 
-> ⚠️ Notes:
-> - This is the fastest path for reviewers, but results may be less robust than running the model locally (latency, network dependencies, webcam differences).
-> - Use this method for quick checks and for the judges who want an immediate demo.
+> ⚠️ Note:  
+> This is cloud-based and webcam dependent.  
+> Use only for testing, not for final demonstration.
 
 ---
 
-## Method 2 — Robust: Run Locally on the Arduino Nicla Vision (Recommended)
-> This is the production/demo mode: model runs on device, streams MJPEG over Wi-Fi, displays detected sign labels on the stream.
+## ⭐ Method 2 — Robust: Run Locally on the Arduino Nicla Vision (Recommended)
+> This is the production mode: real-time **on-device inference** + Wi-Fi MJPEG streaming  
+> with gesture labels drawn directly on the video.
 
 ### Requirements
-- Arduino **Nicla Vision** with OpenMV-compatible firmware (the board must support OpenMV scripts)  
-- **OpenMV IDE** installed (Windows)  
-- USB cable (micro/USB-C depending on your board)  
-- A smartphone or laptop to act as hotspot (or a Wi-Fi network)  
-- Repo cloned locally, containing the `OpenMV/` folder with these files:
+- Arduino **Nicla Vision**  
+- **OpenMV IDE** (Windows recommended)  
+- USB cable (USB-C or Micro depending on version)  
+- A smartphone/laptop hotspot  
+- The repository containing the `OpenMV/` folder with:
   - `main.py`  
   - `trained.tflite`  
   - `labels.txt`
 
 ---
 
-### Step A — Clone repo & prepare files
+### Step A — Clone Repo & Prepare Files
 1. Clone the GitHub repository:
-   ```bash
-   git clone https://github.com/<your-repo>/Silent-Voice.git
-   cd Silent-Voice/OpenMV
-    ```
+
+```bash
+git clone https://github.com/techzro/iSign2Text-Real-Time-Portable-Sign-Language-to-Text-Translator.git
+cd iSign2Text/OpenMV
+```
 
 2. Ensure the following files exist in `OpenMV/`:
 

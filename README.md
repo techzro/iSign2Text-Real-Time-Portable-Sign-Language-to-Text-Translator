@@ -1,4 +1,4 @@
-# Silent-Voice: Sign Language Translator
+# iSign2Text: Real-Time Portable Sign Language-to-Text Translator
 Real-time Indian Sign Language (ISL) gesture recognition using Edge AI on the Arduino Nicla Vision  
 On-device inference · Wi-Fi video streaming · Optional display mode
 
@@ -12,7 +12,7 @@ For complete step-by-step instructions on running the Sign Language Translator o
 ---
 
 ## 📌 Overview
-**Silent-Voice** is a portable, real-time sign language translator powered entirely by **edge machine learning** running on the **Arduino Nicla Vision**.  
+**iSign2Text** is a portable, real-time sign language translator powered entirely by **edge machine learning** running on the **Arduino Nicla Vision**.  
 It recognizes **15 Indian Sign Language (ISL) gestures** using an **on-device object detection model** trained with **Edge Impulse**, and displays the gesture labels directly on:
 
 - a **live Wi-Fi MJPEG video stream** accessible via a smartphone browser, or  
@@ -77,7 +77,7 @@ Optional: `Camera Frame → Gesture Overlay → External Display`
 ## 📌 Project Structure
 
 ```
-Silent-Voice/
+iSign2Text/
 │
 ├── README.md
 ├── USAGE.md                   
@@ -117,7 +117,7 @@ Download for Windows.
 ### **3. Copy these files to Nicla Vision's storage:**
 - `trained.tflite`  
 - `labels.txt`  
-- `silent_voice_openmv.py`  
+- `main.py`  
 
 ### **4. Update Wi-Fi credentials**
 Edit:
@@ -125,14 +125,14 @@ Edit:
 SSID = "YourHotspotName"
 KEY  = "YourPassword"
 ```
-### **Run the script in OpenMV IDE**
+### **5. Run the script in OpenMV IDE**
 ### **6. Open the live video stream**
 
 On your smartphone or laptop: http://<NICLA-IP>:8080
 
 You will see:
--Live camera feed
--Gesture label drawn next to the detected sign
+- Live camera feed
+- Gesture label drawn next to the detected sign
 
 ## 📌 Results
 
@@ -151,9 +151,9 @@ You will see:
 
 ---
 
-## 📌 Edge Impulse Public Project
+## 📌 Edge Impulse Public Project (Try the Model Online)
 
-🔗 **Link:** _Add your EI public project link here_  
+🔗 **Link:** [Edge Impulse](https://studio.edgeimpulse.com/public/841431/live) 
 
 ---
 
