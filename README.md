@@ -4,6 +4,13 @@ On-device inference · Wi-Fi video streaming · Optional display mode
 
 ---
 
+## 📘 How to Run the Project
+For complete step-by-step instructions on running the Sign Language Translator on the Arduino Nicla Vision, see:
+
+👉 [USAGE.md](USAGE.md)
+
+---
+
 ## 📌 Overview
 **Silent-Voice** is a portable, real-time sign language translator powered entirely by **edge machine learning** running on the **Arduino Nicla Vision**.  
 It recognizes **15 Indian Sign Language (ISL) gestures** using an **on-device object detection model** trained with **Edge Impulse**, and displays the gesture labels directly on:
@@ -72,7 +79,8 @@ Optional: `Camera Frame → Gesture Overlay → External Display`
 ```
 Silent-Voice/
 │
-├── README.md                   
+├── README.md
+├── USAGE.md                   
 ├── LICENSE                 
 │
 ├── OpenMV/
